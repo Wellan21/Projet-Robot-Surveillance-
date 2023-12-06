@@ -1,14 +1,46 @@
 <script src="Ajax.js"></script>
 
-<img src="http://<?php 
-echo $_SERVER["SERVER_ADDR"]; ?>:8000/stream.mjpg">
-<button type="button" onclick="bouton('avancer.php?vit=')">Avancer</button>
-<button type="button" onclick="bouton('reculer.php?vit=')">Reculer</button>
-<button type="button" onclick="bouton('Tdroite.php?vit=')">Tourner a Droite</button>
-<button type="button" onclick="bouton('Tgauche.php?vit=')">Tourner a Gauche </button>
-<button type="button" onclick="bouton('stop.php?vit=')">Stop</button>
 
-<input type="range" id="vitesse" name="vitesse" min="20" max="200"  value="100"
+
+
+
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="boutons-avancer">
+        <button type="button" onclick="bouton('avancer.php?vit=')">
+            <img src="image/avancer.png" alt="Avancer" width="80" height="80">
+        </button>
+    </div>
+        <div class="boutons-reculer">
+         <button type="button" onclick="bouton('reculer.php?vit=')">
+            <img src="image/reculer.png" alt="Reculer" width="80" height="80">
+        </button>
+    </div>
+    <div class="video-stream">
+        <!-- <img src="http://10.121.41.107:8000/stream.mjpg"width="650" height="350"> -->
+        <img src="http://<?php  echo $_SERVER["SERVER_ADDR"]; ?>:8000/stream.mjpg"> 
+
+    </div>
+    <div class="boutons-droit">
+            <button type="button" onclick="bouton('Tdroite.php?vit=')">
+                <img src="image/tourner_droite.png" alt="Tourner Droite" width="80" height="80">
+            </button>
+    </div>
+    <div class="boutons-gauche">
+            <button type="button" onclick="bouton('Tgauche.php?vit=')">
+                <img src="image/tourner_gauche.png" alt="Tourner Gauche" width="80" height="80">
+            </button>
+    </div>
+    <div class="boutons-stop">
+            <button type="button" onclick="bouton('stop.php?vit=')">
+                <img src="image/stop.png" alt="Stop" width="80" height="80">
+            </button>
+     </div>
+            
+
+<div class="vitesse">
+<input type="range" id="vitesse" name="vitesse" min="20" max="200"  value="20"
 list="tickmarks">
 <datalist id="tickmarks">
 <option value="20"></option>
@@ -31,7 +63,7 @@ list="tickmarks">
 <option value="190"></option>
 <option value="200"></option>
 </datalist>
-
+</div>
 
 <script>
 function bouton (commande) {

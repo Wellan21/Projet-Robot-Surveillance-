@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background :#99b9c6
+}
+
+
+
+.video-stream {
+    margin-top: 10px
+}
+
+.boutons-droit {
+    position:absolute;
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments sur le côté droit du conteneur */
+    align-items: flex-start; /* Aligne les éléments en haut du conteneur */
+    margin-top: 180px; /* Ajustez cela en fonction de l'espace souhaité entre le flux vidéo et les boutons */
+    width: 100%;
+}
+
+.boutons-gauche {
+    position:absolute;
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments sur le côté droit du conteneur */
+    align-items: flex-start; /* Aligne les éléments en haut du conteneur */
+    margin-top: 270px; /* Ajustez cela en fonction de l'espace souhaité entre le flux vidéo et les boutons */
+    width: 100%;
+}
+.boutons-avancer {
+    position:absolute;
+    display: flex;
+    justify-content: left;
+    margin-top: 0px; /* Ajustez cela en fonction de l'espace souhait� entre le flux vid�o et les boutons */
+    width: 100%;
+
+}
+.boutons-reculer {
+    position:absolute;
+    display: flex;
+    justify-content: left;
+    margin-top: 90px; /* Ajustez cela en fonction de l'espace souhait� entre le flux vid�o et les boutons */
+    width: 100%;
+}
+.boutons-stop {
+    position:absolute;
+    display: flex;
+    justify-content: left;
+    margin-top: 360px; /* Ajustez cela en fonction de l'espace souhait� entre le flux vid�o et les boutons */
+    width: 100%;
+}
+.vitesse
+{
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement dans le conteneur */
+    margin-top: 370px;
+    width: 100%;
+}
